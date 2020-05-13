@@ -3,3 +3,15 @@ body {
 }
 
 h1 {}
+
+.form {
+    display: none;
+}
+
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
