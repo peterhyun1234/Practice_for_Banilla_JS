@@ -1,11 +1,11 @@
 const formContainer = document.querySelector(".js-nameForm");
-const input = formContainer.querySelector(".js-nameInput");
+const greetingInput = formContainer.querySelector(".js-nameInput");
 
 const greetingContainer = document.querySelector(".js-greeting");
 
 function sudmitHandler(event) {
     event.preventDefault();
-    const inputName = input.value;
+    const inputName = greetingInput.value;
 
     printGreeting(inputName);
     saveName(inputName);
