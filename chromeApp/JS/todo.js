@@ -3,7 +3,7 @@ const toDoInput = toDoForm.querySelector(".js-toDoInput");
 
 const toDoList = document.querySelector(".js-toDoList");
 
-const toDoArray = [];
+let toDoArray = [];
 //console.log(toDoForm);
 //console.log(toDoInput);
 //console.log(toDoList);
@@ -19,7 +19,18 @@ function sudmitHandler(event) {
 }
 
 function deleteToDo(event) {
-    console.log(event.target.parentNode);
+    //console.log(event.target.parentNode);
+    const TargetBtn = event.target;
+    const Targetli = TargetBtn.parentNode;
+
+    toDoList.removeChild(Targetli); // 해당 라인 지우기
+
+    let tempToDo = toDoArray.filter(function(element) {
+        return element.id !== parseInt(Targetli.id);
+    }); //toDoArray에서 id가 Targetli.id인 것 지우기
+
+    toDoArray = tempToDo;
+    saveToDo();
 }
 
 function saveToDo() {
