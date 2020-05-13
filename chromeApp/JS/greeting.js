@@ -1,5 +1,5 @@
-const formContainer = document.querySelector(".js-form");
-const input = formContainer.querySelector(".js-input");
+const formContainer = document.querySelector(".js-nameForm");
+const input = formContainer.querySelector(".js-nameInput");
 
 const greetingContainer = document.querySelector(".js-greeting");
 
