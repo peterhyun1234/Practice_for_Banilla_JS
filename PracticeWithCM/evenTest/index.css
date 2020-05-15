@@ -1,0 +1,12 @@
+body {
+    background-color: palegreen;
+}
+
+h1 {
+    color: blue;
+    transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+    font-size: x-large;
+}
