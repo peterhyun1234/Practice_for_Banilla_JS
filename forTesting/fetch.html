@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+        }
+        
+        .box1 {
+            background-color: blueviolet;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .box2 {
+            background-color: blueviolet;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        
+        .box {
+            background-color: blueviolet;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+
+        <div class="jsName"><input value="name" /></div>
+        <div class="jsAge"><input value="age" /></div>
+
+        <div class="jsBtns">
+            <button id="jsGet">Get</button>
+            <button id="jsPost">Post</button>
+        </div>
+
+    </div>
+
+    <script src="fetchTest.js"></script>
+</body>
+
+</html>
